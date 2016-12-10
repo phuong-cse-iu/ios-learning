@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3n-c1-I11">
+                                <rect key="frame" x="40" y="219" width="240" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZM-Mg-6r8">
+                                        <rect key="frame" x="10" y="10" width="220" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Pdo-xz-exm"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OMb-7E-pHx">
+                                        <rect key="frame" x="10" y="50" width="220" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-uS-cGU">
+                                        <rect key="frame" x="131" y="90" width="99" height="30"/>
+                                        <state key="normal" title="Register"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIn-Jd-hB8">
+                                        <rect key="frame" x="10" y="90" width="99" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OMb-7E-pHx" firstAttribute="width" secondItem="mZM-Mg-6r8" secondAttribute="width" id="3IY-wk-aje"/>
+                                    <constraint firstAttribute="bottom" secondItem="AIn-Jd-hB8" secondAttribute="bottom" constant="10" id="6Xu-kX-Q99"/>
+                                    <constraint firstItem="OMb-7E-pHx" firstAttribute="height" secondItem="mZM-Mg-6r8" secondAttribute="height" id="9UR-LU-FOX"/>
+                                    <constraint firstAttribute="trailing" secondItem="mZM-Mg-6r8" secondAttribute="trailing" constant="10" id="9Wp-Ic-6i3"/>
+                                    <constraint firstItem="AIn-Jd-hB8" firstAttribute="top" secondItem="OMb-7E-pHx" secondAttribute="bottom" constant="10" id="D9x-YJ-ryU"/>
+                                    <constraint firstItem="u4I-uS-cGU" firstAttribute="top" secondItem="AIn-Jd-hB8" secondAttribute="top" id="LGW-wB-B5V"/>
+                                    <constraint firstItem="u4I-uS-cGU" firstAttribute="height" secondItem="AIn-Jd-hB8" secondAttribute="height" id="M29-RA-GUS"/>
+                                    <constraint firstItem="u4I-uS-cGU" firstAttribute="trailing" secondItem="OMb-7E-pHx" secondAttribute="trailing" id="P88-sg-TI5"/>
+                                    <constraint firstItem="AIn-Jd-hB8" firstAttribute="leading" secondItem="OMb-7E-pHx" secondAttribute="leading" id="Sc9-No-BTH"/>
+                                    <constraint firstItem="u4I-uS-cGU" firstAttribute="width" secondItem="AIn-Jd-hB8" secondAttribute="width" id="VRV-QU-rzg"/>
+                                    <constraint firstItem="mZM-Mg-6r8" firstAttribute="leading" secondItem="D3n-c1-I11" secondAttribute="leading" constant="10" id="VxW-Am-H2A"/>
+                                    <constraint firstItem="mZM-Mg-6r8" firstAttribute="top" secondItem="D3n-c1-I11" secondAttribute="top" constant="10" id="fgD-gk-1Tg"/>
+                                    <constraint firstItem="OMb-7E-pHx" firstAttribute="leading" secondItem="mZM-Mg-6r8" secondAttribute="leading" id="hbG-zU-PPH"/>
+                                    <constraint firstItem="AIn-Jd-hB8" firstAttribute="height" secondItem="OMb-7E-pHx" secondAttribute="height" id="iDy-ZX-JMY"/>
+                                    <constraint firstItem="AIn-Jd-hB8" firstAttribute="width" secondItem="OMb-7E-pHx" secondAttribute="width" multiplier="0.45" id="kbH-8E-I3Q"/>
+                                    <constraint firstItem="OMb-7E-pHx" firstAttribute="top" secondItem="mZM-Mg-6r8" secondAttribute="bottom" constant="10" id="yiC-AV-HgY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D3n-c1-I11" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5AJ-xm-GIM"/>
+                            <constraint firstItem="D3n-c1-I11" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mRY-hd-GAw"/>
+                            <constraint firstItem="D3n-c1-I11" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3/4" id="nZT-I7-tdI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343.125" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+</document>
