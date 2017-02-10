@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chocon" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-HN-pRL">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ppC-xG-dbO"/>
+                                    <constraint firstAttribute="height" constant="128" id="wu7-JP-0a9"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PyO-HA-atb" appends="YES" id="IjK-Vt-iRG"/>
+                                    <outletCollection property="gestureRecognizers" destination="j5E-H0-WLD" appends="YES" id="5wE-51-xhJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="7Uu-gg-Yz8" appends="YES" id="Umi-IA-LXx"/>
+                                    <outletCollection property="gestureRecognizers" destination="3uI-yn-15D" appends="YES" id="CdH-l0-esS"/>
+                                    <outletCollection property="gestureRecognizers" destination="xjb-2H-RcB" appends="YES" id="Quq-Du-Mcd"/>
+                                    <outletCollection property="gestureRecognizers" destination="Hc5-GL-3lo" appends="YES" id="PXY-aH-P8N"/>
+                                    <outletCollection property="gestureRecognizers" destination="Yve-dk-cH4" appends="YES" id="jmt-Bt-2D4"/>
+                                </connections>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Her-zN-jxx">
+                                <rect key="frame" x="128" y="464" width="118" height="31"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fs2-r8-thc"/>
+                                    <constraint firstAttribute="width" constant="114" id="IMW-mi-Abg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YBL-CZ-IJD" appends="YES" id="giX-Rh-IYy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ziZ-HN-pRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4wO-Ly-gmi"/>
+                            <constraint firstItem="ziZ-HN-pRL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lpc-9w-R7c"/>
+                            <constraint firstItem="Her-zN-jxx" firstAttribute="top" secondItem="ziZ-HN-pRL" secondAttribute="bottom" constant="66.5" id="Q5k-pc-GZS"/>
+                            <constraint firstItem="Her-zN-jxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YyA-Gw-sWF"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="MG3-IH-Hj4" appends="YES" id="qua-RP-XC5"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="ziZ-HN-pRL" id="hrn-D2-ZfN"/>
+                        <outlet property="slider" destination="Her-zN-jxx" id="boK-3f-SAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PyO-HA-atb">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="Ujs-NR-rBZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="j5E-H0-WLD">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="UkB-vD-6JB"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="7Uu-gg-Yz8">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="gKu-CR-Nfz"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3uI-yn-15D">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="C7n-dM-oiW"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="YBL-CZ-IJD"/>
+                <swipeGestureRecognizer direction="right" id="xjb-2H-RcB">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="FZ9-28-LED"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Hc5-GL-3lo">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="SoW-lH-ekm"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="MG3-IH-Hj4">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="vEG-69-kh6"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Yve-dk-cH4">
+                    <connections>
+                        <action selector="aGesture:" destination="BYZ-38-t0r" id="eLT-Ga-t27"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-534" y="-55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chocon" width="670" height="418"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKitDemo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-gL-tXc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vwi-mg-rqe">
+                                <rect key="frame" x="35.5" y="629" width="304" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Yt-cz-c8s"/>
+                                    <constraint firstAttribute="width" constant="300" id="EAA-5Z-md0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="aSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="mMO-ZO-k9T"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Taw-gL-tXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="G3a-mB-UET"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vwi-mg-rqe" secondAttribute="bottom" constant="8" id="Gk2-KJ-CMk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Taw-gL-tXc" secondAttribute="bottom" id="YrN-Uh-PPX"/>
+                            <constraint firstAttribute="trailing" secondItem="Taw-gL-tXc" secondAttribute="trailing" id="iZu-Q5-2Hd"/>
+                            <constraint firstItem="vwi-mg-rqe" firstAttribute="centerX" secondItem="Taw-gL-tXc" secondAttribute="centerX" id="oky-l8-CUa"/>
+                            <constraint firstItem="Taw-gL-tXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tRr-Rp-sFh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="Taw-gL-tXc" id="xpP-DA-rH3"/>
+                        <outlet property="slider" destination="vwi-mg-rqe" id="2VD-yL-iVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294" y="-35"/>
+        </scene>
+    </scenes>
+</document>

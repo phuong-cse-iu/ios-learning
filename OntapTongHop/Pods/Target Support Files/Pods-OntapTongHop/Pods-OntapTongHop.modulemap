@@ -1,0 +1,6 @@
+framework module Pods_OntapTongHop {
+  umbrella header "Pods-OntapTongHop-umbrella.h"
+
+  export *
+  module * { export * }
+}

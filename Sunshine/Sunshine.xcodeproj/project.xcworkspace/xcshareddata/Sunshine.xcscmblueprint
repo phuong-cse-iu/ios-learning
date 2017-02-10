@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1A9321AB151369E02F2B21E8590D058AF2C5E243",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1A9321AB151369E02F2B21E8590D058AF2C5E243" : 9223372036854775807,
+    "BE6419FAA9544BC82161A4A6097AC7A0AFE51679" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4BF07CEC-6828-4477-B722-2E64FA04AE72",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1A9321AB151369E02F2B21E8590D058AF2C5E243" : "Sunshine\/",
+    "BE6419FAA9544BC82161A4A6097AC7A0AFE51679" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sunshine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sunshine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/phuong-cse-iu\/Sunshine-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A9321AB151369E02F2B21E8590D058AF2C5E243"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/phuong-cse-iu\/ios-learning.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE6419FAA9544BC82161A4A6097AC7A0AFE51679"
+    }
+  ]
+}

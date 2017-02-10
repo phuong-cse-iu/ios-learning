@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnTwo: UIButton!
     @IBOutlet weak var btnOne: UIButton!
     @IBOutlet weak var btnRandom: UIButton!
-    let arrImage = ["dog", "cat", "elephant", "bird"]
+    let arrImage:Array<String> = ["dog", "cat", "elephant", "bird"]
+    
+    let arrAnimatedImg:Array<String> = ["santa1", "santa2", "santa3", "santa5", "santa5", "santa6"]
     
     let arrImageUrl:Array<String> = ["https://mobile.gamelandvn.com/wp-content/uploads/2016/07/006.png", "http://genknews.genkcdn.vn/k:2016/1-27-sandshrew-1468951494516/pokemongoneunhorodieunaybansegapduocpokemonmaminhmuon.png", "http://assets.pokemon.com/assets/cms2/img/pokedex/full//610.png", "http://cdn.kul.vn/data/article/2016/07/09/Articuno-1_1468063722.png", "http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/i/2016/07/16/pokemon-evee.jpg?itok=DmFWMx3V"]
     
@@ -24,11 +26,12 @@ class ViewController: UIViewController {
     
     func action() {
         index += 1
-        if index == arrImageUrl.count{
+        if index == arrAnimatedImg.count{
             index = 0
         }
         
         slider.value = Float(index)
+        image.loadImage(name: arrAnimatedImg[index])
     }
     
     override func viewDidLoad() {
@@ -38,15 +41,17 @@ class ViewController: UIViewController {
         // Timer doi tuong quan li thoi gian
         // scheduledTimer dinh thoi gian lam gi day
         // target refer to viewcontroller
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
         
         slider.minimumValue = Float(index)
-        slider.maximumValue = Float(arrImageUrl.count - 1)
+        slider.maximumValue = Float(arrAnimatedImg.count - 1)
         slider.value = Float(index)
         // image.loadImage(name: arrImage[index])
         
         
-        image.loadImageFromUrl(url: "http://cdn.kul.vn/data/article/2016/07/09/Articuno-1_1468063722.png")
+        //        image.loadImageFromUrl(url: "http://cdn.kul.vn/data/article/2016/07/09/Articuno-1_1468063722.png")
+        
+        image.loadImage(name: arrAnimatedImg[index])
         
         
         // layer quan li ve border cua button
@@ -65,10 +70,10 @@ class ViewController: UIViewController {
         index = index - 1
         
         if index < 0 {
-            index = arrImageUrl.count - 1
+            index = arrImage.count - 1
         }
         
-        image.loadImageFromUrl(url: arrImageUrl[index])
+        image.loadImage(name: arrAnimatedImg[index])
         
         slider.value = Float(index)
     }
@@ -76,11 +81,11 @@ class ViewController: UIViewController {
     
     @IBAction func btnNext(_ sender: Any) {
         index += 1
-        if index == arrImageUrl.count{
+        if index == arrImage.count{
             index = 0
         }
         
-        image.loadImageFromUrl(url: arrImageUrl[index])
+        image.loadImage(name: arrAnimatedImg[index])
         slider.value = Float(index)
 
     }
@@ -88,14 +93,14 @@ class ViewController: UIViewController {
     @IBAction func abtnRandom(_ sender: Any) {
         index = Int(arc4random()) % arrImage.count
         
-        image.loadImageFromUrl(url: arrImageUrl[index])
+        image.loadImage(name: arrAnimatedImg[index])
         
     
     }
     
     
     @IBAction func aslider(_ sender: Any) {
-        image.loadImageFromUrl(url: arrImageUrl[Int(slider.value)])
+        image.loadImage(name: arrAnimatedImg[index])
     }
     
     

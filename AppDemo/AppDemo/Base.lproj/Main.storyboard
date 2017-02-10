@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ixH-dY-raA">
-                                <rect key="frame" x="18" y="425" width="284" height="31"/>
+                                <rect key="frame" x="18" y="426" width="284" height="31"/>
                                 <connections>
                                     <action selector="aslider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ANJ-8P-Fkc"/>
                                 </connections>
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="-155"/>
+            <point key="canvasLocation" x="-812" y="-200"/>
         </scene>
     </scenes>
 </document>
